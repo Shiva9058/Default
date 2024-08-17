@@ -50,7 +50,7 @@ class Employee {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Employee other = (Employee) obj;
+		Employee1 other = (Employee1) obj;
 		return id == other.id;
 	}
 
@@ -58,14 +58,14 @@ class Employee {
 
 public class HashColl {
 	public static void main(String... s) {
-		Employee emp1 = new Employee("shiva", 12);
-		Employee emp2 = new Employee("shivam", 12);
+		Employee1 emp1 = new Employee1("shiva", 12);
+		Employee1 emp2 = new Employee1("shivam", 12);
 
-		Map<Employee, String> empMap = new HashMap<>();
+		Map<Employee1, String> empMap = new HashMap<>();
 		empMap.put(emp1, "CSE");
 		empMap.put(emp2, "IT");
 
-		for (Map.Entry<Employee, String> em : empMap.entrySet()) {
+		for (Map.Entry<Employee1, String> em : empMap.entrySet()) {
 			System.out.println(em.getKey() + "  " + em.getValue());
 		}
 	}
